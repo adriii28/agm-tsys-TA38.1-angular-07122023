@@ -1,0 +1,31 @@
+<h1><strong>Alta cliente</strong></h1>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre: </label>
+    <input
+      type="text"
+      class="form-control"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      formControlName ="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="exampleCif" class="form-label">CIF: </label>
+    <input type="text" class="form-control" id="exampleInputCif" formControlName ="cif"/>
+  </div>
+  <div class="mb-3">
+    <label for="exampleAddress" class="form-label">Direccion: </label>
+    <input type="text" class="form-control" id="exampleInputAddress" formControlName ="address"/>
+  </div>
+  <div class="mb-3">
+    <label for="exampleGroup" class="form-label">Grupo: </label>
+    <br>
+    <select class="btn btn-outline border dropdown-toggle" id="exampleInputGroup" formControlName="group">
+        <option value="1" selected>Grupo 1</option>
+        <option value="2">Grupo 2</option>
+        <option value="3">Grupo 3</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,11 @@
+<h1 class="mb-3"><strong>Listado clientes</strong></h1>
+@for (client of clients; track $index) {
+<div class="card mb-3">
+  <div class="card-body d-flex align-items-center justify-content-center">
+    <p class="flex-grow-1 text-center">{{ client.name }}</p>
+    <p class="flex-grow-1 text-center">{{ client.cif }}</p>
+    <p class="flex-grow-1 text-center">{{ client.address }}</p>
+    <p class="flex-grow-1 text-center">{{ client.group }}</p>
+  </div>
+</div>
+}
